@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Valentine's Day Animation";
+}
+
+<div class="container">
+    <div class="record-player">
+        <img src="~/images/bingo.jpeg" alt="Record" id="record" class="record">
+        <audio id="song" src="~/audio/My Boo (Acoustic).mp3"></audio>
+    </div>
+    <button id="playButton" onclick="playSong()">Play Song</button>
+    <button id="proceedButton" onclick="startFlowerAnimation()" style="display:none;">Proceed</button>
+
+    <div id="flower-container">
+        <div class="heart" style="top: 50px; left: 30%;">❤️</div>
+        <div class="heart" style="top: 150px; left: 60%;">❤️</div>
+        <div class="heart" style="top: 200px; left: 10%;">❤️</div>
+        <div class="heart" style="top: 100px; left: 80%;">❤️</div>
+    </div>
+    <div id="message" style="display:none;">Please stop fighting with me now and please be my valentine</div>
+</div>
